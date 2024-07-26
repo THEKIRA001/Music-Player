@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Bootstrap Cdn -->
+  </head>
+  <body>
+    <div class="theme-toggle">
+        <label class="switch">
+          <input type="checkbox" id="theme-toggle">
+          <span class="slider round"></span>
+        </label>
+        <span id="theme-label">Dark</span>
+      </div>
+    <h1 id="heading">Music Player</h1>
+    <div id="player-container" class="container">
+      
+      <div class="left box-shadows">
+        <div id="filter">
+          Filter by Genre:
+          <select>
+            <option>All</option>
+            <option>Rock</option>
+            <option>Pop</option>
+            <option>Hip pop</option>
+          </select>
+        </div>
+        <div id="songs">
+          <h2>All Songs</h2>
+          <ul id="songs-list">
+            <!-- Enter them dynamatically --> 
+            <li>Shape Of You</li>
+            <li>Cold (Ft. Future)</li>
+            <li>Numb</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="center box-shadows">
+        <div id="artist-details">
+          <img src="https://samplesongs.netlify.app/album-arts/without-me.jpg">
+          <h1>Songs</h1>
+          <p>Singer</p>
+        </div>
+        <audio id="audio" controls src="https://samplesongs.netlify.app/Bad%20Liar.mp3">
+        </audio>
+        <div id="controls">
+          <button><=</button>
+          <button>=></button><br>
+          <button>Add to Playlist</button>
+        </div>
+      </div>
+
+      <div class="right">
+        <div id="choose-playlist">Some Stuff</div>
+        <div id="show-playlist" class="box-shadows">Some Shit</div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
