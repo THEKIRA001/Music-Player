@@ -37,6 +37,7 @@ body.dark-theme {
 
 #genre-filter{
   background-color: rgb(103, 103, 103);
+  color: white;
   font-size: 15px;
   border: 0;
   padding: 5px;
@@ -97,18 +98,26 @@ audio {
 }
 
 .player-controls {
+  display: flex;
+  justify-content: center;
   margin-top: 10px;
   text-align: center;
 }
 
+.player-controls-left, .player-controls-right{
+  display: flex;
+  flex-direction: column;
+}
+
 .player-controls button {
+  width: 110px;
   background-color: #6a1b9a;
   color: #fff;
   padding: 8px 15px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin: 0 5px;
+  margin: 5px 5px;
   transition: background-color 0.3s;
 }
 
